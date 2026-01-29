@@ -1,0 +1,33 @@
+Starting...
+Segmentation fault (core dumped)
+@Vkt5451 ➜ /workspaces/x86-assembly (main) $ as -64 file.s -o file.out
+@Vkt5451 ➜ /workspaces/x86-assembly (main) $ ld file.out -o file
+@Vkt5451 ➜ /workspaces/x86-assembly (main) $ ./file 1200
+Segmentation fault (core dumped)
+@Vkt5451 ➜ /workspaces/x86-assembly (main) $ ./file 1200
+Segmentation fault (core dumped)
+@Vkt5451 ➜ /workspaces/x86-assembly (main) $ as -32 file.s -o file.out
+@Vkt5451 ➜ /workspaces/x86-assembly (main) $ ld file.out -o file
+ld: i386 architecture of input file `file.out' is incompatible with i386:x86-64 output
+@Vkt5451 ➜ /workspaces/x86-assembly (main) $ ./file 1200
+bash: ./file: No such file or directory
+@Vkt5451 ➜ /workspaces/x86-assembly (main) $ as --32 file.s -o file.out
+@Vkt5451 ➜ /workspaces/x86-assembly (main) $ ld -m elf_i386 file.out -o file
+@Vkt5451 ➜ /workspaces/x86-assembly (main) $ ./file 1200
+1200
+@Vkt5451 ➜ /workspaces/x86-assembly (main) $ as --32 file.s -o file.out
+@Vkt5451 ➜ /workspaces/x86-assembly (main) $ ld -m elf_i386 file.out -o file
+@Vkt5451 ➜ /workspaces/x86-assembly (main) $ ./file 1200
+Segmentation fault (core dumped)
+@Vkt5451 ➜ /workspaces/x86-assembly (main) $ as --32 file.s -o file.out
+@Vkt5451 ➜ /workspaces/x86-assembly (main) $ ld -m elf_i386 file.out -o file
+@Vkt5451 ➜ /workspaces/x86-assembly (main) $ ./file 1200
+1200
+@Vkt5451 ➜ /workspaces/x86-assembly (main) $ as --32 file.s -o file.out
+@Vkt5451 ➜ /workspaces/x86-assembly (main) $ ld -m elf_i386 file.out -o file
+@Vkt5451 ➜ /workspaces/x86-assembly (main) $ ./file 1200
+1@Vkt5451 ➜ /workspaces/x86-assembly (main) $ ./file 1200
+1@Vkt5451 ➜ /workspaces/x86-assembly (main) $ as --32 file.s -o file.out
+@Vkt5451 ➜ /workspaces/x86-assembly (main) $ ld -m elf_i386 file.out -o file
+@Vkt5451 ➜ /workspaces/x86-assembly (main) $ ./file 1200
+1200
